@@ -1,0 +1,91 @@
+html{
+    background-color: black;
+    overflow: hidden;
+   
+}
+h1{
+    border: white solid 3px;
+    color: yellow;
+    font-family: 'Playfair Display', cursive;
+    /*font-family: 'Courier New', cursive;*/
+    font-size: clamp(6rem,3vh, 12rem);
+    margin-top: 0px;
+}
+.content{
+    column-count: 2;
+  
+}
+#stretch{
+
+width: 100%;
+
+}
+
+#the{
+    display:inline-block;
+    vertical-align:top; 
+    float: left;
+    width: 40%;
+}
+p{
+    color: yellow;
+    font-size: clamp(2.0rem, 3vh, 6rem);
+    
+}
+.art-description{
+    font-size:clamp(1.4rem, 3vh, 6rem); 
+    width: 45%;
+    display:inline-block;
+    padding-left: 90px;
+}
+
+@media (max-width: 980px) {
+   
+    h1 {
+      font-size: clamp(4rem,3vh, 9rem);
+    }
+    p, .art-description{
+        font-size: clamp(2rem, 3vw, 5rem);
+        padding: 0px;
+        width: 100%;
+    }
+    #stretch, #the{
+        width: 80%;
+    }
+    
+  }
+  
+  /*@media (max-width: 600px){
+    #gallery img{
+      width: 100%;
+    }
+  }*/
+  @media(max-width: 400px){
+    .content{
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: clamp(1rem,3vh, 6rem);
+        padding-bottom: 10px;
+        padding-right: 60px;
+        width: 170%;
+        text-align: center;
+    }
+    p, .art-description{
+        font-size: clamp(17px, 3vh, 11px);
+        padding: 0px;
+        width: 100%;
+    }
+    #stretch{
+        width: 100%;
+        margin-top: 110px;
+        
+        margin: 0px;
+        height: 23vh;
+    }
+    #the{
+        width: 100%;
+        margin-top: 110px;
+        
+    }
+}

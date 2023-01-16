@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Xandria's Ink</title>
+</head>
+
+<body>
+    <!--START NAV-->
+    <nav class="navlist topage">
+        <ul>
+            <li><a href="#Paintings">Gallery</a></li>
+            <li><a href="AboutMe.html">Artist</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="PaintGallery.html">Album</a></li>
+        </ul>
+    </nav><!--Nav END-->
+    <!--HOMEPAGE-->
+    <section id="Artist" class="artist">
+        <h1 class="Name headings">Alexzandria CHEATHAM </h1>
+        <!--<h2 class="Sitename headings">Handcrafted Acrylic Paintings</h2>-->
+        <!--<div class="about">
+        <h3><b>Autobiography</b></h3>
+        <p class="greetings"><b>Hello Everyone! Alex here! I am a young artist from iowa. I've spent learning
+                the craft from experienced artists that I admire. I have spent four years of professional training,
+                but it's a skilled built throughout my entire life. My inspiration comes from Claudé Monet, Piccaso, Tim
+                Burton,
+                Hayao Miyazaki and many others.</b></p>
+        <h3>Description of work</h3>
+        <p id="art-description" class="greetings art-descrition"> Commonly, elements of surrealism, texture and color
+            stand out in my
+            most current work. I specialize in acrylic painting, drawing, and collage making. The content as of late
+            have been personal projects, but I am open to exploring portrait work or illustration in the future.</p>
+    </div> -->
+    </section>
+
+    <!--Gallery Section-->
+    <section id="Paintings" class="Paintings">
+        <h2 class="galleryhead">Heart of an Artist</h2>
+        <h4 class="quote">"I spend my days on the road. My
+            community will see my work and think of home, and I love that!"</h4>
+        <div class="gallery">
+
+            <div class="border">
+                <img class="image1" src="neighborhoodart.jpg" alt="streetlights" />
+                <p>Tranquil Neighborhood</p>
+            </div>
+
+            <div class="border">
+                <img class="image2" src="mutli.jpg" alt="variousArts" />
+                <p>Array of Nature</p>
+            </div>
+
+
+            <div class="border">
+                <img class="image3" src="sidesunset.jpg" alt="oceannight" />
+                <p>Lone Tree! </p>
+            </div>
+            <div class="border">
+                <img class="image3" src="NightB4Christmas.jpg" alt="oceannight" />
+                <p>The Night Before Christmas </p>
+            </div>
+        </div>
+
+    </section>
+    <!--Contact Page-->
+    <section id="contact" class="contact">
+        <h1 class="contacthead">GET IN TOUCH</h1>
+        <div class="contact-links">
+            <!--encryption of email-->
+            <script type="text/javascript">
+                function decode(a) {
+                    return a.replace(/[a-zA-Z]/g, function (c) {
+                        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13)
+                            ? c : c - 26);
+                    })
+                };
+                function openMailer(element) {
+                    var y = decode("znvygb:orahgmre@qbznva.qr");
+                    element.setAttribute("href", y);
+                    element.setAttribute("onclick", "");
+                    element.firstChild.nodeValue = "Open email software";
+                };
+            </script>
+            <h5>Email Address</h5>
+            <a id="email" class="info" href="Cheatham.alex9@gmail.com" target="blank" onclick='openMailer(this);'><i
+                    class='fa fa-at' style="font-size:30px;color: red"></i><i><b>G</b>-Email</i></a>
+            <h5>Instagram</h5>
+            <a class="info" href="https://instagram.com/xelacheatham?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                    class="fa fa-instagram" style="font-size:30px;color: red"></i><i><b>A</b>lex</i></a>
+            <h5>Phone Number</h5>
+            <a class="info" href="" target="_blank">(563)-542-3524</a>
+        </div>
+    </section>
+</body>
+
+</html>
