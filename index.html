@@ -87,29 +87,54 @@
                 };
             </script>
            <h3>Contact Form</h3>
-
-            <div class="container">
-                <form action="mail.php" method="post">
+<form
+  action="https://formspree.io/f/xdovkqya"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+           <!-- <div class="container">
+                <form action="https://formspree.io/f/xdovkqya"
+  method="POST">
                     <label for="name">Name</label>
-                    <input type="text" name="name" placeholder="Your name..">
+                    <input type="text" id="name" name="name" placeholder="Your name..">
                     <section>
                         <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="jason@gmail.com..">
+                        <input type="email" id="email" name="email" placeholder="jason@gmail.com..">
                     </section>
-                    
-                    
-                    <input type="text" name="message" placeholder="Write something.."
+                    <legend>Please select Type of Art:</legend>
+                    <div>
+                        <input type="radio" id="Original" name="art" value="original" />
+                        <label for="contactChoice1">Print</label>
+
+                        <input type="radio" id="print" name="art" value="print" />
+                        <label for="contactChoice2">Original</label>
+
+                        <input type="radio" id="custom" name="art" value="custom" />
+                        <label for="contactChoice3">Custom</label>
+                    </div>
+
+                    <textarea id="message" name="message" placeholder="Write something.."
                         style="height:200px"></textarea>
                     <div>
                         <input type="submit" value="Submit">
                     </div>
                 </form>
             </div>
-            contact form currently doesn't work
+           <!-- contact form currently doesn't work
             <h5>Email Address</h5>
             <a id="email" class="info" href="Cheatham.alex9@gmail.com" target="blank" onclick='openMailer(this);'><i
                     class='fa fa-at' style="font-size:30px;color: red"></i><i><b>G</b>-Email</i></a>
-            <!-- <h5>Instagram</h5>
+             <h5>Instagram</h5>
             <a class="info" href="https://instagram.com/xelacheatham?igshid=YmMyMTA2M2Y=" target="_blank"><i
                     class="fa fa-instagram" style="font-size:30px;color: red"></i><i><b>A</b>lex</i></a>
             <h5>Phone Number</h5>
