@@ -8,11 +8,48 @@ body {
   background: #E8D7C8;
   /*#EBE7E7;*/
 }
+#thankyou{
+  margin-top: 100px;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
+  background-color: black;
+  text-align: center;
+  /* box-shadow: 4px 8px 6px 4px rgba(0, 187, 255, 0.837);*/
+  width: 100%;
+  position: fixed;
+  top: 0;
+
+}
+
+.navlist li {
+  display: inline;
+  font-style: italic;
+  font-weight: 900;
+  font-family: 'Courier New', cursive;
+  font-size: clamp(16px, 3vh, 32px);
+  padding: 8px;
+  display: list-item;
+  list-style-type: circle;
+  list-style-position: inside;
+  float: right;
+  margin-right: 20px;
+}
+.navlist li:hover{
+  background-color: #45a049;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
 
 .header {
   text-align: center;
-  padding: 32px;
+  padding: 30px;
   background: #E0DDDD;
+  margin-top: 30px;
 }
 
 #gallery {
