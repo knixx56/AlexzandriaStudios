@@ -3,13 +3,41 @@ html{
     overflow: hidden;
    
 }
+nav {
+    display: flex;
+    justify-content: end;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+.navlist li {
+    display: inline;
+    font-style: italic;
+    font-weight: 900;
+    font-family: 'Courier New', cursive;
+    font-size: clamp(16px, 3vh, 32px);
+    padding: 8px;
+    display: list-item;
+    list-style-position: inside;
+    float: right;
+    margin-right: 20px;
+}
+.navlist li:hover{
+    background-color: #45a049;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
 h1{
     border: white solid 3px;
     color: yellow;
     font-family: 'Playfair Display', cursive;
     /*font-family: 'Courier New', cursive;*/
     font-size: clamp(6rem,3vh, 12rem);
-    margin-top: 0px;
 }
 .content{
     column-count: 2;
