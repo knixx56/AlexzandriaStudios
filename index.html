@@ -86,14 +86,43 @@
                     element.firstChild.nodeValue = "Open email software";
                 };
             </script>
-            <h5>Email Address</h5>
+           <h3>Contact Form</h3>
+
+            <div class="container">
+                <form action="mail.php" method="post">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..">
+                    <section>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="jason@gmail.com..">
+                    </section>
+                    <legend>Please select Type of Art:</legend>
+                    <div>
+                        <input type="radio" id="Original" name="art" value="original" />
+                        <label for="contactChoice1">Print</label>
+
+                        <input type="radio" id="print" name="art" value="print" />
+                        <label for="contactChoice2">Original</label>
+
+                        <input type="radio" id="custom" name="art" value="custom" />
+                        <label for="contactChoice3">Custom</label>
+                    </div>
+                    
+                    <textarea id="message" name="message" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+            <!-- <h5>Email Address</h5>
             <a id="email" class="info" href="Cheatham.alex9@gmail.com" target="blank" onclick='openMailer(this);'><i
                     class='fa fa-at' style="font-size:30px;color: red"></i><i><b>G</b>-Email</i></a>
             <h5>Instagram</h5>
             <a class="info" href="https://instagram.com/xelacheatham?igshid=YmMyMTA2M2Y=" target="_blank"><i
                     class="fa fa-instagram" style="font-size:30px;color: red"></i><i><b>A</b>lex</i></a>
             <h5>Phone Number</h5>
-            <a class="info" href="" target="_blank">(563)-542-3524</a>
+            <a class="info" href="" target="_blank">(###)-###-####</a> -->
         </div>
     </section>
 </body>
