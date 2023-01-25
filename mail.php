@@ -1,4 +1,5 @@
 <?php
+Allow: GET, POST, HEAD
 //get data from form
 
 $name = $_POST['name'];
