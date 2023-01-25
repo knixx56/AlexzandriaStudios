@@ -1,5 +1,8 @@
 <?php
-Allow: GET, POST, HEAD
+add_header Allow "GET, POST, HEAD" always;
+if ( $request_method !~ ^(GET|POST|HEAD)$ ) {
+	return 405;
+}
 //get data from form
 
 $name = $_POST['name'];
