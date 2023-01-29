@@ -8,13 +8,13 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 }
+
 nav {
     display: flex;
     justify-content: end;
     margin-right: 10px;
     background-color: black;
     text-align: center;
-    /* box-shadow: 4px 8px 6px 4px rgba(0, 187, 255, 0.837);*/
     width: 100%;
     position: fixed;
     top: 0;
@@ -34,9 +34,11 @@ nav {
     list-style-position: inside;
     float: right;
 }
-.navlist li:hover{
+
+.navlist li:hover {
     background-color: #45a049;
 }
+
 a {
     text-decoration: none;
     color: white;
@@ -48,19 +50,18 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 89vh;
-    width: 100%; 
+    width: 100%;
 }
 
 
 .headings {
     text-align: center;
-    /*font-family: 'Brush Script MT', cursive;*/
     padding-top: 145px;
     text-decoration: wavy;
     color: yellow;
     font-weight: 900;
     text-shadow: black 4px 0px;
-   
+
 }
 
 .Name {
@@ -99,13 +100,13 @@ p {
 
 /*Gallery*/
 .Paintings {
-    background-color:black;
+    background-color: black;
     text-align: center;
     color: white;
     width: 100%;
     padding-top: 40px;
-    border-top: yellow solid 8px;  
-    
+    border-top: yellow solid 8px;
+
 }
 
 .gallery {
@@ -116,31 +117,37 @@ p {
     max-width: 870px;
     margin: 0 auto;
 }
-.galleryhead{
-    font-family:'Courier New', Courier, monospace;
+
+.galleryhead {
+    font-family: 'Courier New', Courier, monospace;
     color: aliceblue;
-    font-size: 3rem; 
+    font-size: 3rem;
     padding-bottom: 20px;
     text-decoration: overline;
 }
-.quote{
-    font-family:'Courier New', Courier, monospace;
+
+.quote {
+    font-family: 'Courier New', Courier, monospace;
     color: aliceblue;
-    font-size: 1.6rem; 
-}.gallery .image1{
-   width: 419px;
+    font-size: 1.6rem;
 }
+
+.gallery .image1 {
+    width: 419px;
+}
+
 .gallery img {
     display: block;
     height: 350px;
-   max-width: 100%;
+    max-width: 100%;
 }
 
-.border{
+.border {
     border: yellow solid 4px;
 }
+
 /*CONTACT INFO*/
-.contact{
+.contact {
     background-image: url("getInTouch.jpeg");
     background-position: center;
     background-repeat: no-repeat;
@@ -149,7 +156,8 @@ p {
     padding-bottom: 180px;
     color: brown;
 }
-.contacthead{
+
+.contacthead {
     text-align: center;
     padding-top: 50px;
     text-decoration: wavy;
@@ -159,23 +167,34 @@ p {
     text-shadow: black 4px 0px;
     padding-bottom: 40px;
 }
-h5{
-    font-size: clamp(3rem,3vh, 5rem);
+
+h5 {
+    font-size: clamp(3rem, 3vh, 5rem);
     padding-left: 20px;
-    
+
 }
-.info{
-    font-size: clamp(2rem,3vh, 5rem);
+
+textarea {
+    height: 200px;
+}
+
+.info {
+    font-size: clamp(2rem, 3vh, 5rem);
     padding-left: 20px;
     color: black;
 }
-label{
+
+label {
     color: black;
 }
-legend{
-   font-weight: bold;
+
+legend {
+    font-weight: bold;
 }
-input[type=text], select, textarea {
+
+input[type=text],
+select,
+textarea {
     width: 20%;
     padding: 1.5px;
     border: 1px solid #ccc;
@@ -184,123 +203,218 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    
-  }
-  input[type=radio]{
+
+}
+
+input[type=radio] {
     width: 2%;
-  }
-  input[type=submit] {
+}
+
+input[type=submit] {
     background-color: #04AA6D;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    
-  }
-  
-  input[type=submit]:hover {
+
+}
+
+input[type=submit]:hover {
     background-color: #45a049;
-  }
-  
-  .container {
+}
+
+form {
     border-radius: 5px;
     padding: 20px;
-  }
+}
 
 /** media queries to adjust webpage for screen size
 */
 /*change everything below*/
-@media  screen and (max-width: 980px){
-    nav{
+@media screen and (max-width: 980px) {
+    nav {
         justify-content: center;
     }
-   .artist h1, .contact h1{
+
+    .artist h1,
+    .contact h1 {
         font-size: clamp(4.5rem, 3vw, 9.5rem);
     }
-    .artist{
+
+    .artist {
         height: 65vh;
     }
-    .Paintings h4{
+
+    .Paintings h4 {
         font-size: clamp(2.0rem, 3vh, 14px);
     }
-    .Paintings p{
+
+    .Paintings p {
         font-size: clamp(.5rem, 3vh, 1.5rem);
     }
-    .Paintings{
+
+    .Paintings {
         padding-bottom: 10px;
     }
-    .contact{
+
+    .contact {
         height: 40vh;
     }
-    .contact h5, .contact a{
+
+    .contact h5,
+    .contact a {
         font-size: clamp(2.2rem, 3vw, 4rem);
-        font-weight: 900; 
+        font-weight: 900;
     }
-    body .contact .info{
+
+    h3 {
+        font-size: clamp(1.2px, 3vh, 4rem);
+        width: 40%;
+    }
+
+    form input,
+    form label,
+    legend {
+        font-size: 28px;
+    }
+
+    form input[type=email],
+    form input[type=text] {
+        width: 280px;
+    }
+
+    textarea {
+        width: 350px;
+    }
+
+    body .contact .info {
         color: blue;
     }
 }
-@media screen and (max-width: 700px){
-    .Name{
+
+@media(max-width:800px) {
+    .contact h3 {
+        width: 58%;
+    }
+
+    form input,
+    form label,
+    legend {
+        font-size: 18px;
+    }
+
+    form input[type=email],
+    form input[type=text] {
+        width: 160px;
+    }
+
+    legend {
+        width: 59%;
+        background-color: black;
+    }
+
+    .contact .choices label {
+        background-color: black;
+        color: green;
+    }
+
+    input[type=submit] {
+        height: 30px;
+        width: 80px;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .Name {
         padding-top: 45px;
     }
-  }
+}
+
 @media screen and (max-width:400px) {
+
     /*fine*/
     .navlist {
         position: fixed;
         justify-content: center;
-        
+
     }
-    .navlist li{
+
+    .navlist li {
         display: flex;
         padding: 12px;
         font-size: clamp(.1rem, 1.8vh, 1rem);
     }
-    .artist h1{
+
+    .artist h1 {
         font-size: clamp(1.8rem, 3vw, 5.5rem);
     }
+
     .artist {
         height: 55vh;
     }
 
-    .Paintings h2{
+    .Paintings h2 {
         font-size: 1.7rem;
     }
-    .Paintings h4{
+
+    .Paintings h4 {
         font-size: clamp(12px, 3vh, 14px);
     }
-    .Paintings p{
+
+    .Paintings p {
         font-size: clamp(.85rem, 3vw, 2.5rem);
     }
-    .contact{
+
+    .contact {
         height: 20vh;
     }
-    body .Paintings .gallery .image1, body .Paintings .gallery .image2, 
-    body .Paintings .gallery .image3, body .Paintings .gallery .image4{
-       height: 230px;
+
+    body .Paintings .gallery .image1,
+    body .Paintings .gallery .image2,
+    body .Paintings .gallery .image3,
+    body .Paintings .gallery .image4 {
+        height: 230px;
     }
-    body .Paintings .gallery{
-       /* display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        grid-gap: 1rem;
-        width: 100%;
-        max-width:250px;
-        margin: 0 auto;*/
+
+    body .Paintings .gallery {
         display: grid;
         grid-template-columns: repeat(2, minmax(0px, 1fr));
         grid-gap: 1rem;
     }
-    .contact .contacthead{
+
+    .contact {
+        height: 40vh;
+    }
+
+    h3 {
+        font-size: clamp(1.2px, 3vh, 4rem);
+        width: 60%;
+    }
+
+    form {
+        padding: 3.5px;
+    }
+
+    textarea {
+        height: 100px;
+        width: 150px;
+    }
+
+    .contact .contacthead {
         font-size: clamp(1.8rem, 3vw, 5.5rem);
         padding: 15px;
     }
-   .contact h5, .contact a{
+
+    .contact h5,
+    .contact a {
         font-size: clamp(.9rem, 3vw, 4rem);
         font-weight: 900;
     }
-    body .contact .info{
+
+    body .contact .info {
         color: blue;
     }
 }
