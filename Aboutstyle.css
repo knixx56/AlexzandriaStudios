@@ -36,7 +36,6 @@ h1{
     border: white solid 3px;
     color: yellow;
     font-family: 'Playfair Display', cursive;
-    /*font-family: 'Courier New', cursive;*/
     font-size: clamp(6rem,3vh, 12rem);
 }
 .content{
